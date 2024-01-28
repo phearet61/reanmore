@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--link  css bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link jquery of cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    body{
+        padding: 5rem;
+    }
+</style>
+<body>
+    <div class="box-1">
+      <h1>HTML</h1>
+      <button class="btn btn-info btn_1">Click Me!</button>
+    </div>
+    <div class="box-1">
+        <h1>CSS</h1>
+        <button class="btn btn-danger btn_1">Click Me!</button>
+    </div>
+    <div class="box-1">
+        <h1>VueJS</h1>
+        <button class="btn btn-success btn_1">Click Me!</button>
+    </div>
+</body>
+</html>
+<script>
+    /* $(document).ready(function(){
+        $('.btn_1').click(function(){
+           eThis = $(this).parent();
+           eThis.css({
+                'padding':'30px',
+                'width':'500px',
+                'height':'300px',
+                'background-color':'pink',
+           });
+           h1 = $(this).parent('.box-1').find('h1');
+           h1.css({
+                'color':'blue',
+                'font-size':'30px',
+           });
+        });
+    });  */
+    <!-- $(document).ready(funtion(){
+       const get_lorem =()=>{
+        $.ajax({
+            url:'http://127.0.0.1:5500/test.html',
+            cache:false,
+            success:function(res){
+                $('.box-1').append(`${res}`);
+            }
+        });
+       }
+       $('.btn_1').click(funtion(){
+           get_lorem();
+           eThis = $(this).parent();
+       });
+       
+    });
+    */ const get_lorem=()=>{
+        $.ajax({
+          url :'',
+          method:'',
+          data :'',
+          cache: 'false',
+          contentType:false,
+          processData:false,
+          beforeSend:function(){
+
+          },
+          success:function(res){
+
+          }
+    });
+    }
+</script>
